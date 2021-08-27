@@ -172,5 +172,9 @@ img{
     .about-me-writeup{
         font-size:13px;
     }
+    .about-content img{
+        height:200px;
+        width:200px;
+    }
 
 }
