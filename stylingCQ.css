@@ -1,0 +1,176 @@
+/***  CSS FOR CONTACTS PAGE ***/
+.nav_tabs {
+    max-width: 1260px;
+    margin: 1.5rem auto 5rem auto;
+    text-align: center;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color:#3f4c60;
+}
+.nav_tabs a {
+    font-weight: 500;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-decoration: none;
+    font-family: "Audiowide",Verdana,sans-serif,Arial;
+    color: rgb(240, 230, 87);
+    border-bottom: 3px solid silver;
+}
+.nav_tabs a.active, .nav_tabs a.active:hover, .nav_tabs a:hover {
+    color: orange;
+    border-bottom: 3px solid orangered;
+}
+.social-links{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.socials-header,.mail-and-no{
+    color:rgb(247, 243, 191);
+    font-size: 40px;
+    font-weight:bold;
+    font-family: "Audiowide",Verdana,Arial;
+}
+.social-icons-and-links{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    background-color: #222831;
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-bottom: 5rem;
+}
+.social-icons-and-links a{
+    cursor:pointer;
+}
+div.social-icons-and-links a img{
+    transition: transform 2s;
+}
+div.social-icons-and-links img{
+    margin-top: 20%;
+    margin-bottom:20%;
+    width:40%;
+}
+div.social-icons-and-links a img:hover{
+    transform:rotate(360deg);
+}
+/***  CSS FOR MYPROJ PAGE ***/
+.proj-1,.proj-2,.proj-4{
+    border-color: #fcfbf9;
+    border-width:6px;
+    border-style: solid;
+    border-radius: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    width:70%;
+    background-color: #222831;
+    animation: enlarge 2s;
+    animation-iteration-count: 1;
+}
+@keyframes enlarge{
+    0% {transform: scale(0.2,1);}
+    100% {transform: scale(1,1);}
+}
+.proj-details{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+.proj-det{
+    padding-left: 2rem;
+    text-align: left;
+    color:rgb(247, 243, 191);
+    font-size: 20px;
+    line-height:2rem;
+    font-family:"Audiowide",Verdana,sans-serif;
+}
+h2{
+    color:rgb(247, 243, 191);
+    font-size: 39px;
+    font-family:"Audiowide",Verdana,sans-serif;
+    text-align:center;
+}
+img{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+/** CSS FOR ABOUT ME PAGE **/
+.about-content{
+    display:flex;
+    flex-direction:column;
+    width:61%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    color:rgb(245,245,190);
+    padding:3rem;
+    border-style: solid;
+    border-color:beige;
+    border-radius:22px;
+    margin-bottom:5rem;
+    text-align:left;
+    white-space: nowrap;
+    animation: enlarge 2s;
+    animation-iteration-count: 1;
+}
+@keyframes enlarge{
+    0% {transform: scale(0.5,1);}
+    100% {transform: scale(1,1);}
+}
+.about-me-writeup{
+    font-size:20px;
+    line-height:2rem;
+    font-family:Verdana,Arial,'Times New Roman';
+    text-overflow:ellipsis;
+}
+/**LASTLY,CSS FOR HOME! **/
+.welcome-text{
+    font-size:50px;
+    color:#f5f589;
+    font-family:"Audiowide",Verdana,Arial;
+}
+.welcometxt{
+    font-size:35px;
+    color:#f5f589;
+    font-family:"Audiowide",Verdana,Arial;
+    padding-left:2.5rem;
+}
+.pic-name{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+@media screen and (max-width: 768px){
+    .nav_tabs{
+        flex-direction:column;
+    }
+    .proj-1 img{
+        display:none;
+    }
+    .proj-2 img{
+        display:none;
+    }
+    .proj-4 img{
+        display:none;
+    }
+    .welcometxt{
+        font-size: 20px;
+    }
+    .socials-header,.mail-and-no{
+        font-size:20px;
+    }
+    .about-me-writeup{
+        font-size:13px;
+    }
+
+}
